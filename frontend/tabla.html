@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/tabla.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title> VideoJuegos</title>
+</head>
+<body>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th colspan="7">VideoJuegos</th>
+        </tr>
+        <tr>
+          <th>#</th>
+          <th>Titulo</th>
+          <th>Director</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div id="formulario">
+      <h1>Modificación de VideoJuegos</h1>
+      <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form>
+            <div class="formbold-input-flex">
+              <div>
+                <input
+                  type="text"
+                  name="titulo"
+                  id="titulo"
+                  placeholder="The Witcher 3"
+                  class="formbold-form-input"
+                />
+                <label for="titulo" class="formbold-form-label"> Titulo </label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="director"
+                  id="director"
+                  placeholder="Konrad Tomaszkiewicz"
+                  class="formbold-form-input"
+                />
+                <label for="director" class="formbold-form-label"> Director </label>
+              </div>
+            </div>
+            <div class="formbold-input-flex">
+              <div>
+                <select name="categoria_id" id="categoria_id" class="formbold-form-input">
+                  <option value="">Seleccione una categoría</option>
+                  <!-- Opciones dinámicas -->
+                </select>
+                <label for="categoria_id" class="formbold-form-label">Categoría</label>
+              </div>
+              <div>
+                <input
+                  type="number"
+                  name="precio"
+                  id="precio"
+                  placeholder="59.99"
+                  class="formbold-form-input"
+                  step="0.01"
+                  min="0"
+                />
+                <label for="precio" class="formbold-form-label">Precio</label>
+              </div>
+            </div>
+            <button id="btnModificar" class="formbold-btn">
+              Modificar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/tabla.js"></script>
+</body>
+</html>

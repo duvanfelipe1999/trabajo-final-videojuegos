@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Registro de VideoJuegos</h1>
+    <div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <form method="POST">
+        <div class="formbold-input-flex">
+          <div>
+              <input
+              type="text"
+              name="titulo"
+              id="titulo"
+              placeholder="The Witcher 3"
+              class="formbold-form-input"
+              />
+              <label for="titulo" class="formbold-form-label"> Titulo </label>
+          </div>
+          <div>
+              <input
+              type="text"
+              name="director"
+              id="director"
+              placeholder="Konrad Tomaszkiewicz"
+              class="formbold-form-input"
+              />
+              <label for="director" class="formbold-form-label"> Director </label>
+          </div>
+        </div>
+        <div class="formbold-input-flex">
+        <div>
+            <select name="categoria_id" id="categoria_id" class="formbold-form-input">
+                <option value="">Seleccione una categoría</option>
+                <!-- Las opciones se llenarán dinámicamente desde JS -->
+            </select>
+            <label for="categoria_id" class="formbold-form-label">Categoría</label>
+        </div>
+        <div>
+            <input
+            type="number"
+            name="precio"
+            id="precio"
+            placeholder="59.99"
+            class="formbold-form-input"
+            step="0.01"
+            min="0"
+            />
+            <label for="precio" class="formbold-form-label">Precio</label>
+        </div>
+      </div>
+        <button id="btnRegistrar" class="formbold-btn">
+            Registrar
+        </button>
+    </form>
+  </div>
+</div>
+<script src="js/formulario.js"></script>
+</body>
+</html>
